@@ -11,69 +11,78 @@ public abstract class Vehicle {
     private double ticketPrice;
     private BigDecimal busPrice;
     private int fuelConsumption;
-    private String busNumber;
+    private String routeNumber;
 
     public String getModel() {
         return model;
-    }
-
-    public void setModel(String model) {
-        this.model = model;
     }
 
     public String getVehicleNumber() {
         return vehicleNumber;
     }
 
-    public void setVehicleNumber(String vehicleNumber) {
-        this.vehicleNumber = vehicleNumber;
-    }
-
     public int getCapacity() {
         return capacity;
-    }
-
-    public void setCapacity(int capacity) {
-        this.capacity = capacity;
     }
 
     public int getSeatsCount() {
         return seatsCount;
     }
 
-    public void setSeatsCount(int seatsCount) {
-        this.seatsCount = seatsCount;
-    }
-
     public double getTicketPrice() {
         return ticketPrice;
     }
 
-    public void setTicketPrice(double ticketPrice) {
-        this.ticketPrice = ticketPrice;
-    }
-
-    public BigDecimal getBusPrice() {
+    public BigDecimal getVehiclePrice() {
         return busPrice;
-    }
-
-    public void setBusPrice(BigDecimal busPrice) {
-        this.busPrice = busPrice;
     }
 
     public int getFuelConsumption() {
         return fuelConsumption;
     }
 
-    public void setFuelConsumption(int fuelConsumption) {
+    public String getRouteNumber() {
+        return routeNumber;
+    }
+
+    public Vehicle setModel(String model) {
+        this.model = model;
+        return this;
+    }
+
+    public Vehicle setVehicleNumber(String vehicleNumber) {
+        this.vehicleNumber = vehicleNumber;
+        return this;
+    }
+
+    public Vehicle setCapacity(int capacity) {
+        this.capacity = capacity;
+        return this;
+    }
+
+    public Vehicle setSeatsCount(int seatsCount) {
+        Vehicle.this.seatsCount = seatsCount;
+        return this;
+    }
+
+    public Vehicle setTicketPrice(double ticketPrice) {
+        this.ticketPrice = ticketPrice;
+        return this;
+    }
+
+    public Vehicle setBusPrice(BigDecimal busPrice) {
+        this.busPrice = busPrice;
+        return this;
+    }
+
+    public Vehicle setFuelConsumption(int fuelConsumption) {
         this.fuelConsumption = fuelConsumption;
+        return this;
     }
 
-    public String getBusNumber() {
-        return busNumber;
+    public Vehicle setRouteNumber(String routeNumber) {
+        this.routeNumber = routeNumber;
+        return this;
     }
 
-    public void setBusNumber(String busNumber) {
-        this.busNumber = busNumber;
-    }
 }

@@ -1,5 +1,7 @@
 package com.epam.park.dop;
 
+import com.epam.park.transport.Bus;
+
 public class Main {
 
     public static void main(String[] args) {

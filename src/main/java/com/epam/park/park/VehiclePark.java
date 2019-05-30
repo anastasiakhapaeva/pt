@@ -1,5 +1,12 @@
 package com.epam.park.park;
 
-public interface VehiclePark {
+import com.epam.park.transport.Vehicle;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public abstract class VehiclePark<T extends Vehicle> {
+
+    protected List<T> vehicles = new ArrayList<>();
 
 }

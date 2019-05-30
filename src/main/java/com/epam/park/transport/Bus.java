@@ -2,14 +2,19 @@ package com.epam.park.transport;
 
 public class Bus extends Vehicle implements Car {
 
-    private Type type;
+    private BusType type;
 
-    public Type getType() {
+    public BusType getType() {
         return type;
     }
 
-    public void setType(Type type) {
+    public Bus setType(BusType type) {
         this.type = type;
+        return this;
+    }
+
+    private enum BusType {
+        EXPRESS, ELECTRO, USUAL
     }
 
 }
