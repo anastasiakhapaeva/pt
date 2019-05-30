@@ -13,6 +13,8 @@ public class Main {
             sb.append(str1.charAt(i));
         }
         System.out.println(sb);
+
+        
     }
 
 }

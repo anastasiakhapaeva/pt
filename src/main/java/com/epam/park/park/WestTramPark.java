@@ -6,7 +6,12 @@ import java.util.List;
 
 public class WestTramPark extends VehiclePark<Tram>{
 
-    public List<Tram> getBuses() {
+    public WestTramPark(List<Tram> trolleybuses) {
+        vehicles = trolleybuses;
+    }
+
+    @Override
+    public List<Tram> getVehicles() {
         return vehicles;
     }
 

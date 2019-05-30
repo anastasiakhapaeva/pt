@@ -6,12 +6,17 @@ import java.util.List;
 
 public class NorthTrolleyPark extends VehiclePark<Trolleybus>{
 
-    public List<Trolleybus> getBuses() {
+    public NorthTrolleyPark(List<Trolleybus> trolleybuses) {
+        vehicles = trolleybuses;
+    }
+
+    @Override
+    public List<Trolleybus> getVehicles() {
         return vehicles;
     }
 
     public void setBuses(List<Trolleybus> trolleybuses) {
-        this.vehicles = trolleybuses;
+        vehicles = trolleybuses;
     }
 
 }

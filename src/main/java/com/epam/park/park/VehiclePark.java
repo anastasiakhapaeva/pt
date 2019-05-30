@@ -9,4 +9,6 @@ public abstract class VehiclePark<T extends Vehicle> {
 
     protected List<T> vehicles = new ArrayList<>();
 
+    public abstract List<T> getVehicles();
+
 }

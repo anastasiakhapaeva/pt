@@ -7,8 +7,8 @@ import java.util.List;
 
 public class VehicleService {
 
-    public static int calculateParkcost(VehiclePark vehiclePark) {
-
+    public static int calculateParkCost(VehiclePark vehiclePark) {
+        vehiclePark.getVehicles().stream().
     }
 
     public static List<Vehicle> sortByFuelConsumption(VehiclePark vehiclePark) {

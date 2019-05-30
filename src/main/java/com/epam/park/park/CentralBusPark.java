@@ -8,12 +8,17 @@ import java.util.List;
 
 public class CentralBusPark extends VehiclePark<Bus> {
 
-    public List<Bus> getBuses() {
+    public CentralBusPark(List<Bus> trolleybuses) {
+        vehicles = trolleybuses;
+    }
+
+    @Override
+    public List<Bus> getVehicles() {
         return vehicles;
     }
 
     public void setBuses(List<Bus> buses) {
-        this.vehicles = buses;
+        vehicles = buses;
     }
 
     public Bus findByBusNumber(String busNumber) {
