@@ -3,6 +3,7 @@ package com.epam.park.park;
 import com.epam.park.transport.Bus;
 import com.epam.park.transport.Tram;
 import com.epam.park.transport.Trolleybus;
+import com.epam.park.transport.Vehicle;
 
 import java.util.List;
 

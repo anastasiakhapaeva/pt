@@ -1,15 +1,13 @@
 package com.epam.park.transport;
 
-import java.math.BigDecimal;
-
 public abstract class Vehicle {
 
     private String model;
     private String vehicleNumber;
     private int capacity;
     private int seatsCount;
-    private double ticketPrice;
-    private BigDecimal busPrice;
+    private int ticketPrice;
+    private int vehiclePrice;
     private int fuelConsumption;
     private String routeNumber;
 
@@ -29,12 +27,12 @@ public abstract class Vehicle {
         return seatsCount;
     }
 
-    public double getTicketPrice() {
+    public int getTicketPrice() {
         return ticketPrice;
     }
 
-    public BigDecimal getVehiclePrice() {
-        return busPrice;
+    public int getVehiclePrice() {
+        return vehiclePrice;
     }
 
     public int getFuelConsumption() {
@@ -65,13 +63,13 @@ public abstract class Vehicle {
         return this;
     }
 
-    public Vehicle setTicketPrice(double ticketPrice) {
+    public Vehicle setTicketPrice(int ticketPrice) {
         this.ticketPrice = ticketPrice;
         return this;
     }
 
-    public Vehicle setBusPrice(BigDecimal busPrice) {
-        this.busPrice = busPrice;
+    public Vehicle setBusPrice(int vehiclePrice) {
+        this.vehiclePrice = vehiclePrice;
         return this;
     }
 

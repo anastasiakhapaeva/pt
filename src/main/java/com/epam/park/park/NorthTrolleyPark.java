@@ -1,5 +1,6 @@
 package com.epam.park.park;
 
+import com.epam.park.transport.Bus;
 import com.epam.park.transport.Trolleybus;
 
 import java.util.List;
